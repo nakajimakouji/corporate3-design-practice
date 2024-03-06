@@ -155,11 +155,26 @@ video {
   padding: calc(50% - 11px) 0;
   border: 1px solid #fff;
   border-radius: 50%;
-  display: block;
+  display: inline-block;
   color: #fff;
   margin-bottom: 15px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+}
+.feature-list li a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: #fff;
+  opacity: 0.3;
+  transition:all 0.5s ease;
+}
+.feature-list li a:hover:after {
+  width: 100%;
 }
 .feature-list .title {
   font-size: 1rem;
