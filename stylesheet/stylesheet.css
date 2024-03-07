@@ -72,11 +72,11 @@ li {
 nav {
   display: block;
 }
-.navi-menu {
+.header-navi-menu {
   margin-bottom:60px;
   padding-left: 0;
 }
-.navi-sns {
+.header-navi-sns {
   padding-left: 0;
 }
 
@@ -126,7 +126,7 @@ video {
   right: 0;
   bottom: 0;
 }
-.name {
+.project-list-name {
   color: #fff;
   font-size: 0.75rem;
   margin: 0;
@@ -176,7 +176,7 @@ video {
 .feature-list li a:hover:after {
   width: 100%;
 }
-.feature-list .title {
+.feature-list-title {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 5px;
@@ -262,12 +262,12 @@ video {
   background-color: #fff;
   padding-bottom: 80px;
 }
-.link {
+.contact-link {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
 }
-.item {
+.contact-link-item {
   width: 30%;
   display: block;
   border: 1px solid #121212;
@@ -276,11 +276,11 @@ video {
   text-align: center;
   position: relative;
 }
-.item:hover {
+.contact-link-item:hover {
   box-shadow: 0 0 0 2px #121212;
   transition: 0.2s;
 }
-.link .item::before {
+.contact-link-item::before {
   content: "";
   border-top: 20px solid transparent;
   border-right: 20px solid #121212;
@@ -288,7 +288,7 @@ video {
   right: 4px;
   bottom: 4px;
 }
-.item img {
+.contact-link-item img {
   margin-bottom: 5px;
 }
 
@@ -321,20 +321,20 @@ video {
   top: 19px;
   left: 17px;
 }
-.menu {
+.footer-menu {
   display: flex;
   justify-content: center;
   margin: 30px 0 60px;
 }
-.menu li {
+.footer-menu li {
   border-right: 1px solid #fff;
   font-size: 0.875rem;
   padding: 0 20px;
 }
-.menu li:last-child {
+.footer-menu li:last-child {
   border: none;
 }
-.menu a {
+.footer-menu a {
   color: #fff;
 }
 
@@ -369,7 +369,7 @@ video {
     padding: 0;
     z-index: 10;
   }
-  .navi {
+  .header-navi {
     width: 300px;
     background: #fff;
     padding: 25px;
@@ -381,14 +381,14 @@ video {
     transition: 0.5s;
     z-index: 20;
   }
-  .open .navi {
+  .open .header-navi {
     left: 0;
     opacity: 1;
   }
-  .navi ul.navi-menu {
+  .header-navi-menu {
     margin-bottom: 30px;
   }
-  .navi ul li {
+  .header-navi li {
     padding: 10px 0;
   }
   .toggle-btn {
@@ -490,23 +490,23 @@ video {
   .contact {
     padding-bottom: 60px;
   }
-  .link {
+  .contact-link {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
   }
-  .link .item {
+  .contact-link-item {
     width: 60%;
     margin-top: 20px;
   }
-  .item:first-child {
+  .contact-link-item:first-child {
     margin-top: 0;
   }
 
-  .footer .menu {
+  .footer-menu {
     flex-wrap: wrap;
   }
-  .menu li {
+  .footer-menu li {
     margin-bottom: 10px;
   }
 }
